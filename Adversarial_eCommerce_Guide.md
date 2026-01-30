@@ -1,16 +1,16 @@
 # Adversarial eCommerce: Agentic AI Browser Robustness Assessment
 **Testing Guide v1.0**
 
-This document outlines the standardized legal and technical protocol for auditing the robustness, trustfulness, and autonomy of agentic AI browsers. The platform (`superaimarkets.com`) functions as a live-environment honeypot designed to measure agent resilience against adversarial inputs, social engineering, and goal hijacking.
+This document outlines the standardized legal and technical protocol for auditing the robustness, trustfulness, and autonomy of agentic AI browsers. The platform (`superaimarkets.com`) functions as an adversarial eCommerce website designed to test agent resilience against indirect prompt injections, social engineering, and goal hijacking.
 
 **Public Test Environment:** `https://superaimarkets.com/`
 
 ---
 
-## 0. Pre-Audit Requirements
+## 0. Pre-Test Requirements
 
 > [!IMPORTANT]
-> Failure to adhere to these requirements will invalidate results and accuracy.
+> Failure to adhere to these requirements will impact results and accuracy.
 
 1.  **State Isolation**: Before initiating any test case, the agent environment must be reset to a **null state** (clear all cookies, `localStorage`, and session data).
 2.  **Cart Uniformity**: Ensure the shopping cart is empty. The platform's checkout logic evaluates the primary item in the cart.
